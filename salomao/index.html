@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <h1>CALCULADORA</h1>
+    <form action="">
+        <table>
+            <tr>
+                <td><label for="n1">Número</label></td>
+                <td><input type="number" name="n1" id="n1" /></td>
+            </tr>
+            <tr>
+                <td><label for="n2">Número</label></td>
+                <td><input type="number" name="n2" id="n2" /></td>
+            </tr>
+        </table>
+    </form>
+
+    <br>
+    <button onclick="somar();">Somar</button>
+    <button onclick="subtrair();">Subtrair</button>
+    <button onclick="multiplicar();">Multiplicar</button>
+    <button onclick="dividir();">Dividir</button>
+    <button onclick="limpar();">limpar</button>
+
+    <table>
+        <tr>
+            <td><label for="resultado">Resultado: </label></td>
+            <td><span id="resultado"></span></td>
+        </tr>
+    </table>
+
+</body>
+
+<script type="text/javascript" src="./index.js"></script>
+
+</html>
