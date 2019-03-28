@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <script>
+            function inicializa(operacao)
+            {
+                
+            
+            var numero=form.numero.value;
+            var numero1=form.numero1.value;
+           
+             if(operacao=="*"){
+                 var multiplica=numero * numero1;
+                 document.write("O resultado"+ multiplica);
+             }else if(operacao=="/" && numero!=0 && numero1!=0){
+                var divisao=numero / numero1;
+                 document.write("O resultado"+ divisao);
+             }else{
+                 alert("O campo não pode ser zero");
+             }
+              if(operacao == "+"){
+                var soma=parseInt(numero) + parseInt(numero1);
+                 document.write("O resultado"+ soma);
+             }else if(operacao=="-"){
+                var subtrair=numero - numero1;
+                 document.write("O resultado"+ subtrair);
+                 }
+            }
+             
+        </script>
+    </head>
+    <body>
+        <h3>
+            Calculadora
+        </h3>
+        <form onsubmit="return false" id="form">
+            <input type="number" name="numero"><br><br>
+            <input type="number" name="numero1"><br>
+            <input onclick="inicializa('*')" type="submit" class="sinal" value="*">
+            <input onclick="inicializa('/')" type="submit" class="sinal" value="/">
+            <input onclick="inicializa('+')" type="submit" class="sinal" value="+">
+            <input onclick="inicializa('-')" type="submit" class="sinal" value="-">
+        </form>
+    </body>
+</html>
