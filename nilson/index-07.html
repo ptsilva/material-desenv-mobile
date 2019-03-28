@@ -1,0 +1,53 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+	 <title>CALCULADORA</title>
+ </head>
+ <body>
+	 <h3>CALCULADORA</h3>
+		 Número: <input type="text" name="n1" id="n1">
+		 Número: <input type="text" name="n2" id="n2">
+	 <br>
+	 Resultado: <span id="Resultado"></span><br>
+		 <button onclick="somar();">Somar</button>
+		 <button onclick="Subtrair();">Subtrair</button>
+		 <button onclick="Multiplicar();">Multiplicar</button>
+		 <button onclick="Dividir();">Dividir</button>
+		 <button onclick="Limpar();">Limpar</button>
+ </body>
+	 <script type="text/javascript">
+	 	 var n1 = document.getElementById('n1')
+	 	 var n2 = document.getElementById('n2')
+   		 var Resultado = document.getElementById('Resultado')
+
+	 	 function somar ()
+	 	 {
+	 	 	 var soma = parseInt(n1.value)+parseInt(n2.value);
+	 	 	 Resultado.innerHTML = soma;
+	 	 	 Resultado.style.backgroundColor = '#ffffff'
+	 	 }
+         function Subtrair ()
+	 	 {
+	 	 	 var Subtrair = parseInt(n1.value)-parseInt(n2.value);
+	 	 	 Resultado.innerHTML = Subtrair;
+	 	 }
+	 	  function Multiplicar ()
+	 	 {
+	 	 	 var Multiplicar = parseInt(n1.value)*parseInt(n2.value);
+	 	 	 Resultado.innerHTML = Multiplicar;
+	 	 }
+         function Dividir ()
+	 	 {
+
+	 	 	 if (n1.value == '0' || n2.value =='0')
+	 	 	 	 {
+	 	 	 	 alert ('Não é possivel dividir por 0')
+	 	 	 	 }
+	 	 	 else 
+	 	 	 	 {
+	 	 	 		var Dividir = parseInt(n1.value)/parseInt(n2.value);
+	 	 	 		Resultado.innerHTML = Dividir;
+	 	 	 	 }
+	 	 }
+	 </script>
+ </html>

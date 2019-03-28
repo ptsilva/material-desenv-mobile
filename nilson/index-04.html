@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+	 <title>CALCULADORA</title>
+ </head>
+ <body>
+	 <h3>CALCULADORA</h3>
+		 Número: <input type="text" name="n1" id="n1">
+		 Número: <input type="text" name="n2" id="n2">
+	 <br>
+	 Resultado: <span id="Resultado"></span><br>
+		 <button onclick="somar();">Somar</button>
+		 <button>Subtrair</button>
+		 <button>Multiplicar</button>
+		 <button>Dividir</button>
+ </body>
+	 <script type="text/javascript">
+	 	 var n1 = document.getElementById('n1')
+	 	 var n2 = document.getElementById('n2')
+   		 var Resultado = document.getElementById('Resultado')
+
+	 	 function somar ()
+	 	 {
+	 	 	 var soma = parseInt(n1.value)+parseInt(n2.value);
+	 	 	 Resultado.innerHTML=soma;
+	 	 }
+         function Subtrair ()
+	 	 {
+	 	 	
+	 	 }
+	 </script>
+ </html>
