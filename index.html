@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<meta charset="utf-8">
+<meta name="author" content="ronald">
+<head>
+	<title></title>
+</head>
+<body>
+	<h3> Calculadora</h3>
+	<label>Número:<input type="text" name="n1" id="n1"></label>
+	<label>Número:<input type="text" name="n2" id="n2"></label>
+	<br>
+	Resultado: <span id="resultado"></span><br>
+	<button onclick="somar();">Somar</button>
+	<button onclick="subtrair();">Subtrair</button>
+	<button onclick="multiplcar();">Multiplicar</button>
+	<button onclick="dividir();">Dividir</button>
+	<button onclick="limpar();">Limpar</button>
+
+</body>
+<script type="text/javascript">
+	var n1 = document.getElementById('n1')
+	var n2 = document.getElementById('n2')
+	var resultado = document.getElementById("resultado")
+
+	function limpar() {
+		n1.value = ''
+		n2.value = ''
+		resultado.innerHTML = ''
+		resultado.style.backgroundColor = '#FFFFFF'
+	}
+
+	function somar() {
+          var somar = parseInt(n1.value)+parseInt(n2.value)
+          resultado.innerHTML = somar;
+          resultado.style.backgroundColor = '#FFFF00'
+          var n1_inteiro = parseInt(n1.value)
+		  var n2_inteito = parseInt(n2.value)
+
+		 if (n1_inteiro == 0 || n2_inteiro == 0) {
+			alert('Não é possível somar por 0')
+		}else{
+			var soma = n1_inteiro / n2_inteiro
+			resultado.innerHTML = soma
+		}
+	}
+	function subtrair() {
+		  var subtrair = parseInt(n1.value)-parseInt(n2.value)
+		  resultado.innerHTML = subtrair;
+		  resultado.style.backgroundColor = '#FFFF00'
+		  var n1_inteiro = parseInt(n1.value)
+		  var n2_inteito = parseInt(n2.value)
+
+		 if (n1_inteiro == 0 || n2_inteiro == 0) {
+			alert('Não é possível subtrair por 0')
+		}else{
+			var subtracao = n1_inteiro / n2_inteiro
+			resultado.innerHTML = subtracao
+		}
+	}
+	function multiplcar() {
+		 var multiplicar = parseInt(n1.value)*parseInt(n2.value)
+		 resultado.innerHTML = multiplicar;
+		 resultado.style.backgroundColor = '#FFFF00'
+		 var n1_inteiro = parseInt(n1.value)
+		 var n2_inteito = parseInt(n2.value)
+
+		 if (n1_inteiro == 0 || n2_inteiro == 0) {
+			alert('Não é possível multiplicar por 0')
+		}else{
+			var multiplicacao = n1_inteiro / n2_inteiro
+			resultado.innerHTML = multiplicacao
+		}
+	}
+	function dividir() {
+		var dividir = parseInt(n1.value)/parseInt(n2.value)
+		resultado.innerHTML = dividir;
+		resultado.style.backgroundColor = '#FFFF00'
+		var n1_inteiro = parseInt(n1.value)
+		var n2_inteito = parseInt(n2.value)
+
+		if (n1_inteiro == 0 || n2_inteiro == 0) {
+			alert('Não é possível dividir por 0')
+		}else{
+			var divisao = n1_inteiro / n2_inteiro
+			resultado.innerHTML = divisao
+		}
+	}
+</script>
+</html>
