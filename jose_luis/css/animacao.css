@@ -1,0 +1,15 @@
+@keyframes pequeno{
+   /* transform: translate(50%,10%);
+   transform: rotate(2500deg);*/
+   0%{
+   
+   }
+  100%{
+    transform: rotate(1080deg)
+  }
+  
+}
+.col-lg-4 img{
+    animation-name: pequeno;
+    animation-duration: 10s
+}
