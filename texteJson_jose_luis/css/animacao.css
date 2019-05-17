@@ -1,0 +1,188 @@
+@keyframes animacsub{
+    
+   0%{
+    margin-top:50px;
+    opacity: 0;
+   }
+  100%{
+    margin-top:0px;
+    opacity: 1;
+    transition-duration: 4s;
+    transition-timing-function: linear;
+    transition-property: margin-top, opacity;
+  }
+  
+}
+.animacsub{
+    animation-name: animacsub;
+    animation-duration: 0.4s ;
+    
+}
+
+.cursor{
+  cursor: pointer;
+}
+.botao{
+  background: #2b3c72;
+  color: #FFF;
+  
+}
+@keyframes aparecerAlerta{
+  0%{
+    opacity: 0;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    left: 33%;
+    z-index: 10;
+  }
+  100%{
+    opacity: 1;
+    transform: translate3d(0,50px,0);
+    position: absolute;
+    top: 0;
+    left: 33.5%;
+    /* background: #FFF; */
+    padding: 1em;
+    border-radius: 2%;
+    z-index: 10;
+  }
+}
+.aparecerAlerta{
+  animation: aparecerAlerta 0.5s forwards;
+  
+}
+ @keyframes aparecer{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    transform: translate3d(210px,0,0);
+    position: absolute;
+    top: 0;
+    background: #FFF;
+    padding: 1em;
+    border-radius: 2%
+  }
+}
+.aparecer{
+  animation: aparecer .5s forwards;
+  
+} 
+@keyframes menuAparecer{
+  0%{
+    opacity: 0;
+    top:0;
+
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.menuAparecer{
+  animation: menuAparecer .5s forwards;
+}
+@keyframes alertaProdutos{
+ 0%{
+   
+   position: fixed;
+   padding: 1em;
+   left: 50%;
+   z-index: 1000;
+ }
+ 100%{
+   position: fixed;
+    left: 75%;
+   transform: translate3d(0,2px,0);
+    z-index: 10;
+  background:  rgba(54, 124, 95,1) ;
+  color: #FFF;
+  z-index: 1000;
+
+  }
+}
+.alertaProdutos{
+  animation: alertaProdutos .5s forwards
+}
+@keyframes fechaProdutos{
+ 0%{
+   position: fixed;
+    left: -75%;
+    transform: translate3d(0,2px,0);
+    z-index: 10;
+     background:  rgba(54, 124, 95,1) ;
+    color: #FFF
+ }
+ 100%{
+  position: fixed;
+  left: -75%;
+  display: none;
+
+  }
+}
+.fechaProdutos{
+  animation: fechaProdutos .5s forwards;
+  
+}
+@keyframes Proalert{
+  0%{
+    position: absolute;
+    z-index: 2000;
+  }
+  100%{
+    position: absolute;
+     transform: translate3d(0,65px,0);
+     cursor: pointer;
+     z-index: 2000;
+
+  }
+}
+.Proalert{
+   animation:  Proalert .5s forwards;
+}
+@keyframes fotoalert{
+  0%{
+    position: fixed;
+   
+  }
+  100%{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+     z-index: 2000;
+     background: rgba(0, 0,0, .5)
+
+  }
+}
+.fotoalert{
+   animation:  fotoalert .5s forwards;
+}
+@keyframes respostaconteine{
+  0%{
+    opacity: 0;
+    height: 0;
+  }
+  100%{
+    opacity: 1;
+    height: 150px;
+  }
+}
+.respostaconteine{
+   animation:  respostaconteine .5s forwards;
+}
+@keyframes backgrounds{
+  0%{
+    background: #2b3c72;
+    background-size: 0%;
+    color: #FFF
+  }
+  100%{
+    background: #2b3c72;
+    background-size: 100%;
+    color: #FFF
+  }
+}
+.fundo{
+  animation: backgrounds 10s forwards
+}

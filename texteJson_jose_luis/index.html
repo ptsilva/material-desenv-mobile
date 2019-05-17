@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body class="container d-flex flex-column justify-content-center align-items-center">
+        <h3>lista de alunos</h3>
+        <div id="erros">
+
+        </div>
+       
+            <form id="form-aluno">
+                <input type="text" name="nome" placeholder="Nome"><br>
+                <input type="text" name="altura"placeholder="altura"><br>
+                <input type="text" name="idade" placeholder="idade"><br>
+                <input type="submit" value="Envia">
+            </form>
+        </div>
+        <div id="resultado" >
+            <table id="lista-aluno" class="table ">
+                <tr>
+                    <td>
+                        id
+                    </td>
+                    <td>
+                        nome
+                    </td>
+                    <td>
+                        altura
+                    </td>
+                    <td>
+                        idade
+                    </td>
+                </tr>
+        </table>
+    </body>
+    <script src="jquery.js">
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            //php -S localhost:8000
+            $("#form-aluno").on("submit",function (evento) {
+                evento.preventDefault();
+                var nome = $("[name = 'nome']").val();
+                var altura = $("[name = 'altura']").val();
+                var idade = $("[name = 'idade']").val();
+                $('#erros').html('CARREGANDO....')
+                $.ajax({
+                    url: "salva_aluno.php",
+                    type: "POST",
+                    dataType: "json",
+                    data: {
+                        'nome': nome,
+                        'altura': altura,
+                        'idade': idade
+                    }
+                   
+                }).done(function (resposta) {
+                    $('#erros').empty();
+                   // console.log(resposta);
+                   if (!resposta.erros) {
+                       alert(resposta.mensagem)
+                   }else{
+                    $("#erros").append(resposta.mensagem.nome)
+                    
+                   }
+                })
+            })
+        })
+       function busca() {
+            $.ajax({
+               url: "busca.php",
+               type: "POST",
+               dataType: "json",
+               data: {
+                   'busca':"busca" 
+               }
+
+           }).done(function (resposta) {
+               if(resposta.erros){
+
+                   for (let index = 0; index < resposta.quant; index++) {
+                        $('#lista-aluno').append('<tr><td>' + resposta.busca[index].id + '</td>' + '<td>' + resposta.busca[index].nome + '</td>' + '<td>' + resposta.busca[index].altura + '</td>' + '<td>' + resposta.busca[index].idade + '</td></tr>')
+
+                       
+                   }
+                //    setTimeout(location.reload(),1000)
+                    location.assign();
+
+               }
+           })
+       }
+       busca()
+    </script>
+</html>

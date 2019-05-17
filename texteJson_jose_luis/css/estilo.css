@@ -1,0 +1,158 @@
+
+*{
+    margin: 0px;padding: 0px;box-sizing: border-box;
+}
+
+#barradebusca, #tiraduvi{
+    background: rgba(220, 53, 69, 0.85);
+}
+
+#secaosladi{
+    padding-top: 30px;
+}
+#iconscesta {
+    color:#fff
+}
+#cestaquatidade{
+    width: 20px;
+    height: 20px;
+    background: #1e3972;
+    padding-bottom: 1px;
+    overflow: hidden;
+}
+#valorpreco{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: large
+}
+#sifram{
+    font-size: 1.2em;
+    margin-left: -1em;
+    font-weight: 400
+}
+#lupa,.loga{
+    font-weight: bolder;
+    background: #1e3972;
+    color: #fff;
+    cursor: pointer;
+}
+.d-block {
+    height: 440px;
+}
+#cotegoria{
+    font-size: 1.2em;
+    margin-left: 5%
+}
+#propaganda{
+    position: relative;
+    top:10px
+}
+
+#entregamos{
+    font-size:0.7em;
+    position: relative;
+    top:-10px
+}
+
+#pagina{
+    color:#1e3972
+}
+#paginaul li{
+    margin-right: 1%
+}
+#inicialli{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#1e3972
+}
+#inicialli svg path{
+    text-shadow:10px 10px #1e3972
+}
+#botaocompra,#pergunta{
+    background-color: #1e3972;
+    
+}
+#cicurlo{
+    height: 100px
+}
+.i-twitterf{
+    margin-right: -41px
+}
+.i-twitter{
+    position: relative;
+    bottom: 5px
+}
+#instituciona nav li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em
+}
+.cards-block span,#infantis{
+    color: #1e3972
+}
+.col-md-8 figure img{
+    padding: 0;
+    position: relative;
+    right: 3%
+}
+#ofertas{
+    color: #f58220
+}
+#femininos{
+    color: #e42999
+}
+a[class="menu-item-texto"]{
+    font-size: 0.7em;
+    color: black
+}
+div[class="dropdown"]{
+    cursor: pointer
+}
+a[class="medicamento" ]{
+    color: #1e3972;
+    text-decoration: none;
+}
+li[class="list-medicamento"]{
+    margin: 1em 0 1em 0;
+    white-space: nowrap
+}
+.menu-derpatamento nav,.alerta{
+    display: none;
+}
+.menu-derpatamento nav.ativo,.alerta.ativo{
+    display: block !important
+}
+#Entra a:hover{
+   background: #1e3972;
+   color: #fff
+}
+.tab-content {
+ height: 250px; 
+ overflow-y:auto; 
+ border: 3px solid #fff;
+ border-bottom-left-radius:5px;
+ border-bottom-right-radius:5px;
+}
+.tab-content h2 { margin-top:3px; } /* sobrescrevemos a margem padrão de h2 */
+#home,#portfolio,#artigos,#contato {
+ color: black;
+ padding: 0 15px;
+}
+
+.nav-tabs > li > a { /* crimos cor de fundo para os links nas abas */
+ 
+ color: #1e3972;
+ text-decoration: none;
+ 
+}
+.pefboto{
+   background: #1e3972;
+   color: #fff
+}
+.fecha{
+    font-size: 1em;
+    color: black;
+    font-weight: bolder
+}
+.close{
+    font-weight: bolder
+}

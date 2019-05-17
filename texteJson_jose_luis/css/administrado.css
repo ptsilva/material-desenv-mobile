@@ -1,0 +1,75 @@
+.foto_perfil{
+    background-color: #e9ecef;
+    padding: 7%
+}
+.grafico{
+    height: 350px;
+    transform: translate3d(-30px, 0, 0)
+}
+.fundomain{
+    background-color: #e9ecef;
+    background-size: 50% 50%;
+}
+.fundodiv{
+    position: absolute;
+    height: 300px;
+}
+.dados{
+    height: 130px;
+    font-weight: bold
+}
+.h5{
+    font-weight: bold
+}
+.valor{
+    font-size: 1.7em
+}
+.secaodados{
+    position: relative;
+    right: 12%;
+    bottom: 10%;
+}
+.vendas{
+    position: relative;
+    right: 4%;
+    bottom: 10%;
+}
+.lupa{
+    background-color: #e9ecef;
+}
+
+.Perfil{
+    position: relative;
+    top:8%;
+    left: 5%;
+    padding: 15% 0 15% 0;
+
+}
+img[src="../imagens/logo.png"]{
+    position: relative;
+    left: 30%;
+}
+.cadastro,.botao{
+    background: #2b3c72
+}
+
+td[class="text-warning d-flex flex-row justify-content-end"] strong{
+    font-weight: bolder;
+    font-size: 2em
+}
+.deleta{
+    display: none;
+}
+.ponteiro{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: -8px;
+    left: 47%;
+    z-index: 20;
+    transform: rotate(30deg)
+}
+.paginainicial,.mensagem,.entrega,.receita,.cliente,.formulario{
+    margin: 300px 0 0 10%
+}
+
